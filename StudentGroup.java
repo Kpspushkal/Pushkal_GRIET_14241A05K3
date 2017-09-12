@@ -1,3 +1,5 @@
+package epam;
+
 import java.util.Date;
 
 /**
@@ -14,6 +16,7 @@ import java.util.Date;
 public class StudentGroup implements StudentArrayOperation {
 
 	private Student[] students;
+    private int lenth;
 	
 	/**
 	 * DO NOT remove or change this constructor, it will be used during task check
@@ -28,10 +31,10 @@ public class StudentGroup implements StudentArrayOperation {
 	public Student[] getStudents() {
             for(int i=0;i<lenth;i++)
             {
-                System.out.println(students.getId());
-                System.out.println(students.getFullname());
-                System.out.println(students.getBirthDate());
-                System.out.println(students.getavgMark());
+                System.out.println(students[i].getId());
+                System.out.println(students[i].getFullname());
+                System.out.println(students[i].getBirthDate());
+                System.out.println(students[i].getAvgMark());
                 
             }
 		// Add your implementation here
@@ -40,12 +43,12 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	public void setStudents(Student[] students) {
-            for(int i=0;i<length;i++)
+            for(int i=0;i<lenth;i++)
             {
-                students.setId();
-                students.setFullname();
-                students.setId();
-                students.setavgMark();
+                students[i].setId();
+                students[i].setFullname();
+                students[i].setId();
+                students[i].setAvgMark();
                 
             }
             
@@ -55,9 +58,9 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student getStudent(int index) {
             System.out.println(students[index].getId());
-                System.out.println(students[index].getFullname());
+                System.out.println(students[index].getFullName());
                 System.out.println(students[index].getBirthDate());
-                System.out.println(students[index].getavgMark());
+                System.out.println(students[index].getAvgMark());
 		// Add your implementation here
 		return null;
 	}

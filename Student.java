@@ -61,6 +61,7 @@ public class Student implements Comparable {
 	public void setBirthDate(Date birthDate) {
 		this.birthDate = birthDate;
 	}
+	
 
 	public double getAvgMark() {
 		return avgMark;
